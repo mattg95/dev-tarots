@@ -1,4 +1,12 @@
-const data = [
+import {ImageSourcePropType} from 'react-native';
+
+export interface Card {
+  title: string;
+  description: string;
+  image: ImageSourcePropType;
+}
+
+const cardDeck: Card[] = [
   {
     title: 'Dev Tarots',
     description: '',
@@ -31,4 +39,4 @@ const data = [
   },
 ];
 
-export default data;
+export default cardDeck;
